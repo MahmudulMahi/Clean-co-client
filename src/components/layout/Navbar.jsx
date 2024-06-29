@@ -27,7 +27,39 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-      
+      <div className="flex-1 text-xl font-bold text-primary">Clean Co</div>
+      <div className="flex-none hidden lg:block">
+        <div className="flex items-center gap-2">
+          {/* Navbar menu content here */}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
+          >
+            Contact
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
           >
             Services
           </NavLink>
