@@ -31,14 +31,7 @@ const Navbar = () => {
       <div className="flex-none hidden lg:block">
         <div className="flex items-center gap-2">
           {/* Navbar menu content here */}
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
-            }
-          >
-            Home
-          </NavLink>
+      
           <NavLink
             to="/about"
             className={({ isActive }) =>
