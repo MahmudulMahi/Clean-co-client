@@ -31,7 +31,14 @@ const Navbar = () => {
       <div className="flex-none hidden lg:block">
         <div className="flex items-center gap-2">
           {/* Navbar menu content here */}
-      
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
+          >
+            Home
+          </NavLink>
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -82,12 +89,7 @@ const Navbar = () => {
                   Orders
                 </NavLink>
 
-                <div
-                  onClick={logout}
-                  className="cursor-pointer text-red-500 px-4 py-2 hover:bg-base-300 rounded-lg"
-                >
-                  Logout
-                </div>
+                
               </div>
             </div>
           ) : (
