@@ -89,7 +89,12 @@ const Navbar = () => {
                   Orders
                 </NavLink>
 
-                
+                <div
+                  onClick={logout}
+                  className="cursor-pointer text-red-500 px-4 py-2 hover:bg-base-300 rounded-lg"
+                >
+                  Logout
+                </div>
               </div>
             </div>
           ) : (
