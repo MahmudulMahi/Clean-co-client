@@ -4,19 +4,7 @@ const Footer = () => {
   return (
     <Container>
       <div className="flex justify-between gap-10">
-        <div>
-          <h1 className="text-xl font-semibold mb-2">Clean Co.</h1>
-          <p className="max-w-[35ch] font-medium">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
-            nostrum quibusdam labore quod aliquid harum omnis excepturi id,
-            accusantium pariatur iste.
-          </p>
-          <div className="flex gap-5 text-3xl text-primary mt-10">
-            <GrFacebook className="cursor-pointer" />
-            <GrLinkedin className="cursor-pointer" />
-            <GrTwitter className="cursor-pointer" />
-          </div>
-        </div>
+      
         <div className="space-y-4">
           <h1 className="text-xl font-bold mb-2">Navigations</h1>
           <div className="flex items-center gap-2">
